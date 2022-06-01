@@ -1,0 +1,89 @@
+:root {
+    --white: white;
+    --accent: rgb(59, 130, 236);
+}
+
+body {
+    margin: 0;
+    background: rgb(223, 222, 215);
+}
+
+header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: var(--accent);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 0 0 40px 40px;
+    transform: translateY(-9rem);
+    animation: .8s slideIn forwards;
+}
+
+header > h1 {
+    margin: 0 auto;
+    font-size: 6vh;
+    color: var(--white);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5rem;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    background: blanchedalmond;
+    width: 30%;
+    box-shadow: 6px 6px var(--accent);
+}
+
+.card-header {
+    background: var(--accent);
+    padding: 1rem;
+    width: 22rem;
+    position: relative;
+    color: var(--white);
+}
+
+.card-header::after {
+    position: absolute;
+    right: -3.4rem;
+    top: 0;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 48px solid transparent;
+    border-left: 50px solid var(--accent);
+    border-bottom: 48px solid transparent;
+}
+
+.card-header > h1, h2 {
+    margin: 0;
+}
+
+.card-info {
+    padding: 1rem;
+}
+
+.card-info > ul {
+    list-style: none;
+    background: var(--white);
+    font-size: 2rem;
+    border: 4px solid var(--accent);
+    padding: .5rem 1rem 1rem 1rem;
+    box-shadow: inset 8px 2px white,
+    inset 8px -2px white,
+    inset 12px 0 rgb(199, 40, 40);
+}
+
+.card-info > ul > li {
+    border-bottom: 2px solid var(--accent);
+}
+
+@keyframes slideIn {
+    100% {
+        transform: translateY(0);
+    }
+}
