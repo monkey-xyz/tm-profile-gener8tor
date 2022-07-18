@@ -6,6 +6,7 @@
 body {
     margin: 0;
     background: rgb(223, 222, 215);
+    transition: 1s all;
 }
 
 header {
@@ -42,7 +43,7 @@ header > h1 {
 .card-header {
     background: var(--accent);
     padding: 1rem;
-    width: 22rem;
+    width: 75%;
     position: relative;
     color: var(--white);
 }
@@ -85,5 +86,15 @@ header > h1 {
 @keyframes slideIn {
     100% {
         transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .container {
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .card {
+        width: 100%;
     }
 }
