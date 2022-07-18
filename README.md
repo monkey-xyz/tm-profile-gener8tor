@@ -25,3 +25,4 @@ All testing of the classes was handled through **Jest**. There is a total of 9 t
 Make sure to have run `npm i` before attempting to run the command.
 
 ## Documentation
+![Screenshot of the completed Team Profile site.](./assets/myteamss.png)
